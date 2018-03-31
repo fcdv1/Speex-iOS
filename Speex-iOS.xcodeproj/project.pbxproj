@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		03646BB4206F196E0056F301 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03646BB3206F196E0056F301 /* AppDelegate.m */; };
 		03646BB7206F196E0056F301 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03646BB6206F196E0056F301 /* ViewController.m */; };
-		03646BBA206F196E0056F301 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03646BB8206F196E0056F301 /* Main.storyboard */; };
 		03646BBC206F196E0056F301 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03646BBB206F196E0056F301 /* Assets.xcassets */; };
 		03646BBF206F196E0056F301 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03646BBD206F196E0056F301 /* LaunchScreen.storyboard */; };
 		03646BC2206F196E0056F301 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03646BC1206F196E0056F301 /* main.m */; };
@@ -62,6 +61,7 @@
 		03646C7D206F19A40056F301 /* CADebugMacros.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03646C4A206F19A40056F301 /* CADebugMacros.cpp */; };
 		03646C7E206F19A40056F301 /* CAXException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03646C4B206F19A40056F301 /* CAXException.cpp */; };
 		03646C7F206F19A40056F301 /* CAStreamBasicDescription.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03646C4E206F19A40056F301 /* CAStreamBasicDescription.cpp */; };
+		03646C83206F216E0056F301 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03646C82206F216E0056F301 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,7 +80,6 @@
 		03646BB3206F196E0056F301 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		03646BB5206F196E0056F301 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		03646BB6206F196E0056F301 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		03646BB9206F196E0056F301 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		03646BBB206F196E0056F301 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03646BBE206F196E0056F301 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03646BC0206F196E0056F301 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -202,6 +201,7 @@
 		03646C4D206F19A40056F301 /* CADebugMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADebugMacros.h; sourceTree = "<group>"; };
 		03646C4E206F19A40056F301 /* CAStreamBasicDescription.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CAStreamBasicDescription.cpp; sourceTree = "<group>"; };
 		03646C4F206F19A40056F301 /* CAMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAMath.h; sourceTree = "<group>"; };
+		03646C82206F216E0056F301 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,11 +248,11 @@
 				03646BB3206F196E0056F301 /* AppDelegate.m */,
 				03646BB5206F196E0056F301 /* ViewController.h */,
 				03646BB6206F196E0056F301 /* ViewController.m */,
-				03646BB8206F196E0056F301 /* Main.storyboard */,
 				03646BBB206F196E0056F301 /* Assets.xcassets */,
 				03646BBD206F196E0056F301 /* LaunchScreen.storyboard */,
 				03646BC0206F196E0056F301 /* Info.plist */,
 				03646BC1206F196E0056F301 /* main.m */,
+				03646C82206F216E0056F301 /* Main.storyboard */,
 			);
 			path = "Speex-iOS";
 			sourceTree = "<group>";
@@ -528,7 +528,7 @@
 				03646C5E206F19A40056F301 /* speex_config_types.h.in in Resources */,
 				03646BBF206F196E0056F301 /* LaunchScreen.storyboard in Resources */,
 				03646BBC206F196E0056F301 /* Assets.xcassets in Resources */,
-				03646BBA206F196E0056F301 /* Main.storyboard in Resources */,
+				03646C83206F216E0056F301 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -618,14 +618,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		03646BB8206F196E0056F301 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				03646BB9206F196E0056F301 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		03646BBD206F196E0056F301 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -748,6 +740,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7PWPSVSW9N;
 				INFOPLIST_FILE = "Speex-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.livall.Speex-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -762,6 +755,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7PWPSVSW9N;
 				INFOPLIST_FILE = "Speex-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.livall.Speex-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
