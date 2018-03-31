@@ -13,8 +13,17 @@ Pod::Spec.new do |s|
     s.source           = { :git => 'https://github.com/fcdv1/Speex-iOS.git', :tag => s.version.to_s }
     s.ios.deployment_target = '8.0'
 
+
     s.subspec 'Libs' do |cs|
-        cs.source_files = 'Speex-iOS/speex/Libs/**/*'
+        cs.source_files = 'Speex-iOS/speex/Libs/*.{h,c,cpp,m}'
+
+        cs.subspec 'libogg' do |ogg|
+            ogg.source_files = 'Speex-iOS/speex/Libs/libogg/**/*'
+        end
+
+        cs.subspec 'libspeex' do |speex|
+            speex.source_files = 'Speex-iOS/speex/Libs/libspeex/**/*'
+        end
     end
     s.subspec 'Codec' do |cs|
         cs.source_files = 'Speex-iOS/speex/Codec/**/*'
