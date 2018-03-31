@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'Speex-iOS'
-    s.version          = '0.1.0'
+    s.version          = '0.2.0'
     s.summary          = <<-DESC
                             remove unnecessary file's of other platform,make it run on the iOS
                          DESC
