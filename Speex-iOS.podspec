@@ -15,7 +15,9 @@ Pod::Spec.new do |s|
 
 
     s.subspec 'Libs' do |cs|
-        cs.source_files = 'Speex-iOS/speex/Libs/*.{h,c,cpp,m}'
+        cs.subspec 'config' do |con|
+            con.source_files = 'Speex-iOS/speex/Libs/config.h'
+        end
 
         cs.subspec 'libogg' do |ogg|
             ogg.source_files = 'Speex-iOS/speex/Libs/libogg/**/*'
@@ -23,6 +25,7 @@ Pod::Spec.new do |s|
 
         cs.subspec 'libspeex' do |speex|
             speex.source_files = 'Speex-iOS/speex/Libs/libspeex/**/*'
+            speex.dependency 'Speex-iOS/Libs/config'
         end
     end
     s.subspec 'Codec' do |cs|
