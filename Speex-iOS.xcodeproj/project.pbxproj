@@ -58,9 +58,6 @@
 		03646C7A206F19A40056F301 /* scal.c in Sources */ = {isa = PBXBuildFile; fileRef = 03646C41206F19A40056F301 /* scal.c */; };
 		03646C7B206F19A40056F301 /* window.c in Sources */ = {isa = PBXBuildFile; fileRef = 03646C45206F19A40056F301 /* window.c */; };
 		03646C7C206F19A40056F301 /* gain_table.c in Sources */ = {isa = PBXBuildFile; fileRef = 03646C46206F19A40056F301 /* gain_table.c */; };
-		03646C7D206F19A40056F301 /* CADebugMacros.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03646C4A206F19A40056F301 /* CADebugMacros.cpp */; };
-		03646C7E206F19A40056F301 /* CAXException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03646C4B206F19A40056F301 /* CAXException.cpp */; };
-		03646C7F206F19A40056F301 /* CAStreamBasicDescription.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03646C4E206F19A40056F301 /* CAStreamBasicDescription.cpp */; };
 		03646C83206F216E0056F301 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03646C82206F216E0056F301 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -194,13 +191,6 @@
 		03646C45206F19A40056F301 /* window.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = window.c; sourceTree = "<group>"; };
 		03646C46206F19A40056F301 /* gain_table.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gain_table.c; sourceTree = "<group>"; };
 		03646C47206F19A40056F301 /* vq_sse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vq_sse.h; sourceTree = "<group>"; };
-		03646C49206F19A40056F301 /* CAStreamBasicDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAStreamBasicDescription.h; sourceTree = "<group>"; };
-		03646C4A206F19A40056F301 /* CADebugMacros.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CADebugMacros.cpp; sourceTree = "<group>"; };
-		03646C4B206F19A40056F301 /* CAXException.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CAXException.cpp; sourceTree = "<group>"; };
-		03646C4C206F19A40056F301 /* CAXException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAXException.h; sourceTree = "<group>"; };
-		03646C4D206F19A40056F301 /* CADebugMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADebugMacros.h; sourceTree = "<group>"; };
-		03646C4E206F19A40056F301 /* CAStreamBasicDescription.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CAStreamBasicDescription.cpp; sourceTree = "<group>"; };
-		03646C4F206F19A40056F301 /* CAMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAMath.h; sourceTree = "<group>"; };
 		03646C82206F216E0056F301 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -271,7 +261,6 @@
 			children = (
 				03646BD7206F19A40056F301 /* Codec */,
 				03646BDB206F19A40056F301 /* Libs */,
-				03646C48206F19A40056F301 /* PublicUtility */,
 			);
 			path = speex;
 			sourceTree = "<group>";
@@ -429,20 +418,6 @@
 			path = speex;
 			sourceTree = "<group>";
 		};
-		03646C48206F19A40056F301 /* PublicUtility */ = {
-			isa = PBXGroup;
-			children = (
-				03646C49206F19A40056F301 /* CAStreamBasicDescription.h */,
-				03646C4A206F19A40056F301 /* CADebugMacros.cpp */,
-				03646C4B206F19A40056F301 /* CAXException.cpp */,
-				03646C4C206F19A40056F301 /* CAXException.h */,
-				03646C4D206F19A40056F301 /* CADebugMacros.h */,
-				03646C4E206F19A40056F301 /* CAStreamBasicDescription.cpp */,
-				03646C4F206F19A40056F301 /* CAMath.h */,
-			);
-			path = PublicUtility;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -572,7 +547,6 @@
 				03646C58206F19A40056F301 /* ltp.c in Sources */,
 				03646BB4206F196E0056F301 /* AppDelegate.m in Sources */,
 				03646C6F206F19A40056F301 /* preprocess.c in Sources */,
-				03646C7E206F19A40056F301 /* CAXException.cpp in Sources */,
 				03646C63206F19A40056F301 /* jitter.c in Sources */,
 				03646C53206F19A40056F301 /* exc_8_128_table.c in Sources */,
 				03646C52206F19A40056F301 /* bitwise.c in Sources */,
@@ -581,11 +555,9 @@
 				03646C5B206F19A40056F301 /* vbr.c in Sources */,
 				03646C70206F19A40056F301 /* stereo.c in Sources */,
 				03646C57206F19A40056F301 /* buffer.c in Sources */,
-				03646C7D206F19A40056F301 /* CADebugMacros.cpp in Sources */,
 				03646C6B206F19A40056F301 /* exc_10_16_table.c in Sources */,
 				03646C79206F19A40056F301 /* lsp.c in Sources */,
 				03646C7B206F19A40056F301 /* window.c in Sources */,
-				03646C7F206F19A40056F301 /* CAStreamBasicDescription.cpp in Sources */,
 				03646C61206F19A40056F301 /* exc_5_64_table.c in Sources */,
 				03646C67206F19A40056F301 /* speex_callbacks.c in Sources */,
 				03646C72206F19A40056F301 /* speex.c in Sources */,
